@@ -18,6 +18,8 @@ namespace Reminder
         private bool input_flag;//是否选中锁定键盘
         private bool left_flag;//鼠标左键是否点击
         private Point mouseoff;
+        private bool schedulePaused;//是否因非工作时间而暂停计时
+        private readonly TickGuard tickGuard = new TickGuard();//休眠/锁屏等场景的计时守卫
         public WorkFrm()
         {
             InitializeComponent();
@@ -37,7 +39,9 @@ namespace Reminder
             Point p = new Point(x, y);
             this.PointToScreen(p);
             this.Location = p;
-            
+
+            // 防御：新一轮工作开始时确保键盘未被锁定（正常情况下休息结束时已解锁）
+            if (KeyboardBlocker.IsLocked) KeyboardBlocker.Unlock();
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -80,7 +84,33 @@ namespace Reminder
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            // 系统休眠/锁屏期间或长时间卡顿后，本次 tick 不计数
+            if (!tickGuard.ShouldCount()) return;
+
+            // 非工作时间不计时：倒计时暂停，进入工作时段后自动继续
+            if (!AppConfig.Current.IsWithinWorkTime(DateTime.Now))
+            {
+                SetSchedulePaused(true);
+                return;
+            }
+            SetSchedulePaused(false);
+
             timing();
+        }
+
+        /// <summary>非工作时间暂停计时时的界面状态切换</summary>
+        private void SetSchedulePaused(bool paused)
+        {
+            if (schedulePaused == paused) return;
+            schedulePaused = paused;
+            if (paused)
+            {
+                lblWarn.Text = "非工作时间";
+            }
+            else
+            {
+                lblWarn.Text = "注意坐姿";
+            }
         }
 
         /// <summary>
@@ -125,10 +155,9 @@ namespace Reminder
                 }
                 else
                 {
-
                     this.Close();
-                    RestFrm restFrm = new RestFrm(rst_minutes, wrk_m, input_flag);
-                    restFrm.ShowDialog();                   
+                    // 开始休息：为所有显示器创建遮罩，结束后自动开始新一轮工作倒计时
+                    RestFrm.StartRest(rst_minutes, wrk_m, input_flag, AppConfig.Current.GetEffectiveTips().ToArray());
                 }
             }
         }

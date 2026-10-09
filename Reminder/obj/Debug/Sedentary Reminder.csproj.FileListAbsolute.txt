@@ -21,3 +21,21 @@ E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.RestFrm.resources
 E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Sedentary Reminder.csproj.GenerateResource.cache
 E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.exe
 E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.pdb
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\Reminder.exe
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\Reminder.pdb
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\mscorlib.dll
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\zh-Hans\mscorlib.resources.dll
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\normidna.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\normnfc.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\normnfd.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\normnfkc.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Debug\normnfkd.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Sedentary Reminder.csprojResolveAssemblyReference.cache
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.AboutBox.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.MainFrm.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.WorkFrm.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.Properties.Resources.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.RestFrm.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Sedentary Reminder.csproj.GenerateResource.Cache
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.exe
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Debug\Reminder.pdb

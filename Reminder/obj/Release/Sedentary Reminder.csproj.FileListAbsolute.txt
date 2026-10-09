@@ -1,0 +1,18 @@
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\Reminder.exe
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\Reminder.pdb
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\mscorlib.dll
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\zh-Hans\mscorlib.resources.dll
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\normidna.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\normnfc.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\normnfd.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\normnfkc.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\bin\Release\normnfkd.nlp
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Sedentary Reminder.csprojResolveAssemblyReference.cache
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.AboutBox.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.MainFrm.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.WorkFrm.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.Properties.Resources.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.RestFrm.resources
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Sedentary Reminder.csproj.GenerateResource.Cache
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.exe
+E:\develop\C#\Sedentary-reminder\Reminder\obj\Release\Reminder.pdb
