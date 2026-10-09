@@ -99,10 +99,17 @@ namespace Reminder
         {
             this.Visible = true;
             this.WindowState = FormWindowState.Normal;
+            this.Activate();
             if (wrkFrm != null)
             {
                 wrkFrm.Close();
             }
+        }
+
+        /// <summary>双击托盘图标：打开首选项界面（与右键菜单"首选项"行为一致）</summary>
+        private void NotifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            主窗体ToolStripMenuItem_Click(sender, e);
         }
 
         private void MainFrm_FormClosing(object sender, FormClosingEventArgs e)
